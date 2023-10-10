@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Assignment 1</title>
+</head>
+<body>
+    <div class="addJobOverlay" id="addJobOverlay">
+        <div class="addJobPopup">
+            <h2>New Job</h2>
+            <div class="newJobForm">
+                <form action="" method="post">
+                    <label>Company Name: </label>
+                    <input type="text">
+                    <label>Choose Image: </label>
+                    <input type="file">
+                    <label>Position: </label>  
+                    <input type="text">
+                    <label>Contract: </label>
+                    <input type="text">
+                    <label>Location: </label>
+                    <input type="text">
+                    <input type="radio" id="isFeatured">
+                    <label class="Featured_Label" for="isFeatured">Featured:</label>
+                </form>
+            </div>
+            <button id="makeJob_Button">Add</button>
+            <button id="closeJob_Button">Close</button>
+        </div>
+    </div>
+    <div class="JobDetailsOverlay" id="JobDetailsOverlay">
+        <div class="JobDetailsPopup">
+            <div class="box">Job Details</div>
+            <img src="/images/manage.svg" alt="logo-company"/> 
+            <h3>Company: </h3><p>Manage</p>
+            <h3>Position: </h3><p>Fullstack Developer</p>
+            <h3>Contract: </h3><p>Remote</p>
+            <h3>Description: </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facere modi accusantium! Nisi delectus repudiandae, doloremque est enim ipsam cum illo temporibus explicabo distinctio blanditiis? Inventore cum reiciendis placeat nostrum.</p>
+            <button class="cardClose_Button">Close</button>
+        </div>
+    </div>
+    <div class="page-container">
+        <header id="header"></header>
+        <div id="content">
+            <div id="Filter_Bar" class="card hide">
+                <div id="filters"></div>
+                <div id="Clear_Button">Clear</div>
+            </div>
+            <div id="container" class="grid-container"></div>
+        </div>
+        <button class="addJob_Button">
+            &nbsp+&nbsp
+        </button>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="jqscript.js"></script>
+</html>
